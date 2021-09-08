@@ -27,6 +27,8 @@
             </div>
         </div>
         <div id="login" v-if="loggedin">
+          <div class="flex flex-col h-screen overflow-hidden">
+          <main class="flex-1 overflow-y-scroll">
             <p class="text-yellow-500 font-bold"><span class="text-indigo-400">Welcome</span> {{ user.username }}</p><br/>
             <Search />
             <details>
@@ -34,8 +36,11 @@
               <ShowTheaters />
             </details>
             <button @click="handleLogout" class="text-yellow-500 font-bold">Logout</button>
+          </main>
+          <footer class="w-full text-center border-t border-grey p-4"><Footer /></footer>
         </div>
-    </div>
+        </div>
+      </div>
   </header>
 </template>
 
@@ -43,9 +48,10 @@
 import { ref } from 'vue'
 import Search from './Search'
 import ShowTheaters from './ShowTheaters'
+import Footer from './Footer'
 
 export default {
-  components: { Search, ShowTheaters },
+  components: { Search, ShowTheaters, Footer },
   setup () {
     const loggedin = ref(false)
     const JWT = ref('')
