@@ -29,6 +29,10 @@
         <div id="login" v-if="loggedin">
             <p class="text-yellow-500 font-bold"><span class="text-indigo-400">Welcome</span> {{ user.username }}</p><br/>
             <Search />
+            <details>
+              <summary class="bg-white hover:bg-gray-400 text-gray-600 font-bold px-4 focus:outline-none focus:shadow-outline rounded-tr-3xl rounded-tl-3xl w-4/5 mx-auto">Closest Movie Theater</summary>
+              <ShowTheaters />
+            </details>
             <button @click="handleLogout" class="text-yellow-500 font-bold">Logout</button>
         </div>
     </div>
@@ -38,9 +42,10 @@
 <script>
 import { ref } from 'vue'
 import Search from './Search'
+import ShowTheaters from './ShowTheaters'
 
 export default {
-  components: { Search },
+  components: { Search, ShowTheaters },
   setup () {
     const loggedin = ref(false)
     const JWT = ref('')

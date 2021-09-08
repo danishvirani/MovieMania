@@ -38,20 +38,14 @@
       </section>
     </main>
   </div>
-  <details>
-    <summary class="bg-white hover:bg-gray-400 text-gray-600 font-bold px-4 focus:outline-none focus:shadow-outline rounded-tr-3xl rounded-tl-3xl w-4/5 mx-auto">Closest Movie Theater</summary>
-    <ShowTheaters />
-  </details>
-  <br/><br/>
 </template>
 
 <script>
 import { ref } from 'vue'
 import ShowTimings from './ShowTimings'
-import ShowTheaters from './ShowTheaters'
 
 export default {
-  components: { ShowTimings, ShowTheaters },
+  components: { ShowTimings },
   setup () {
     const userSearchInput = ref('')
     const movie = ref({})
