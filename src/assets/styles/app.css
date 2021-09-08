@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom styling for Material UI Icons */
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-36 { font-size: 36px; }
+
+.my-auto { margin-top: auto; margin-bottom: auto; }
+
+body {
+  background-color: rgba(55, 65, 81, 1);
+}
