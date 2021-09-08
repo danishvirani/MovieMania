@@ -7,6 +7,7 @@
                 <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold px-4 focus:outline-none focus:shadow-outline float-left rounded-tr-xl" @click="handleToggleSignUp">Sign Up</button>
                 <br/>
                 <fieldset v-if="signupHidden" class="bg-white shadow-md rounded-3xl rounded-tl-none px-8 pb-8 mb-4 pt-9 bg-blue-500">
+                  <img src="https://i.imgur.com/iL0DbSW.png" alt="Movie Mania Logo" class='mx-auto'>
                     <p class='text-white font-bold'>LOGIN</p>
                     <br/>
                     <span class="material-icons md-light md-36 align-middle mr-1">account_circle</span>
@@ -16,6 +17,7 @@
                     <button @click="handleLogin" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
                 </fieldset>
                 <fieldset v-if="loginHidden" class="bg-white shadow-md rounded-3xl rounded-tl-none px-8 pt-9 pb-8 mb-4 bg-purple-500">
+                  <img src="https://i.imgur.com/iL0DbSW.png" alt="Movie Mania Logo" class='mx-auto'>
                     <p class='text-white font-bold'>SIGN UP</p>
                     <br/>
                     <span class="material-icons md-light md-36 align-middle mr-1">account_circle</span>

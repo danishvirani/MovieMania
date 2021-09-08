@@ -7,9 +7,9 @@
   </form>
 </div>
   <div class="flex justify-center items-center py-20 mx-auto">
-  <div class="md:px-4 md:flex md:flex-cols-2 lg:flex-cols-3 gap-5 space-y-4 md:space-y-0 flex-wrap mx-20 h-24">
-    <div v-for="timing in timings" :key="timing" class="h-auto">
-    <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+  <div class="md:px-4 md:flex md:flex-cols-2 lg:flex-cols-3 gap-5 space-y-4 md:space-y-0 flex-wrap mx-20">
+    <div v-for="timing in timings" :key="timing" class="max-h-full overflow-y-scroll">
+    <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500 h-full w-100">
       <h2 class="mb-3 text-2xl font-bold text-indigo-600">{{ timing.title }}</h2>
       <div class="my-4">
         <div class="flex space-x-1 items-center">
